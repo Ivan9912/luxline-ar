@@ -1,9 +1,13 @@
-import Image from "next/image";
+import Footer from "@/components/Footer";
+import Nav from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div >
-      <h1>hola</h1>
+      <main className="h-screen">
+        <Nav />
+      </main>
+      <Footer />
     </div>
   );
 }
