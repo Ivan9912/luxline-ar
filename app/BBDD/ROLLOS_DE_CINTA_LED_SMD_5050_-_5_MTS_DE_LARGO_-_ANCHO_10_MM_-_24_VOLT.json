@@ -3,64 +3,88 @@
         "img": "000005",
         "objects": [
             {
-                "img": "1001",
-                "code": "P2811-RGB",
-                "description": "Rollo cinta led Píxel 2811 RGB - 12 volt - 1500 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
-                "lm": "1500",
+                "img": "5001",
+                "code": "5050-BFE-24",
+                "description": "Rollo cinta led 5050 Bco. Frio Exterior - 24 volt - 1400 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
+                "lm": "1400",
+                "w/m": "14,4",
+                "prot": "IP65",
+                "led/m": "60",
+                "ct": "6000ºK",
+                "pack": "2",
+                "price": "39,00"
+            },
+            {
+                "img": "5002",
+                "code": "5050-BCE-24",
+                "description": "Rollo cinta led 5050 Bco. Cálido Exterior - 24 volt - 1400 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
+                "lm": "1400",
+                "w/m": "14,4",
+                "prot": "IP65",
+                "led/m": "60",
+                "ct": "3000ºK",
+                "pack": "2",
+                "price": "39,00"
+            },
+            {
+                "img": "5003",
+                "code": "5050-AZE-24",
+                "description": "Rollo cinta led 5050 Azul Exterior - 24 volt - 1400 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
+                "lm": "1400",
+                "w/m": "14,4",
+                "prot": "IP65",
+                "led/m": "60",
+                "ct": "-",
+                "pack": "2",
+                "price": "39,00"
+            },
+            {
+                "img": "5004",
+                "code": "5050-BFI-24",
+                "description": "Rollo cinta led 5050 Bco. Frio Interior - 24 volt - 1400 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
+                "lm": "1400",
                 "w/m": "14,4",
                 "prot": "IP20",
                 "led/m": "60",
                 "ct": "-",
-                "pack": "1",
-                "price": "PROXIMAMENTE"
+                "pack": "2",
+                "price": "32,00"
             },
             {
-                "img": "1002",
-                "code": "P2812-RGB",
-                "description": "Rollo cinta led Píxel 2811 RGB - 12 volt - 1500 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
-                "lm": "1500",
+                "img": "5005",
+                "code": "5050-BCI-24",
+                "description": "Rollo cinta led 5050 Bco. Cálido Interior - 24 volt - 1400 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
+                "lm": "1400",
                 "w/m": "14,4",
                 "prot": "IP20",
                 "led/m": "60",
                 "ct": "-",
-                "pack": "1",
-                "price": "PROXIMAMENTE"
+                "pack": "2",
+                "price": "32,00"
             },
             {
-                "img": "1003",
-                "code": "KIT-P2835-ROI-120",
-                "description": "KIT - *Rollo cinta led Pixel Rojo Interior - 24 volt - 120 led/m - Ancho de 8 mm - Largo de 10 mts *Controladora inalámbrica *La cinta se corta cada 15 leds",
-                "lm": "2000",
-                "w/m": "15",
-                "prot": "IP20",
-                "led/m": "120",
-                "ct": "-",
-                "pack": "1",
-                "price": "PROXIMAMENTE"
-            },
-            {
-                "img": "1004",
-                "code": "KIT-P2835-BFI-120",
-                "description": "KIT - *Rollo cinta led Pixel Blanco Frio Interior - 24 volt - 120 led/m - Ancho de 8 mm - Largo de 10 mts *Controladora inalámbrica *La cinta se corta cada 15 leds",
-                "lm": "1800",
+                "img": "5006",
+                "code": "5050-AZI-24",
+                "description": "Rollo cinta led 5050 Azul Interior - 24 volt - 1400 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
+                "lm": "1400",
                 "w/m": "14,4",
                 "prot": "IP20",
-                "led/m": "120",
+                "led/m": "60",
                 "ct": "-",
-                "pack": "1",
-                "price": "110,00"
+                "pack": "2",
+                "price": "32,00"
             },
             {
-                "img": "1005",
-                "code": "KIT-P2835-BCI-120",
-                "description": "KIT - *Rollo cinta led Pixel Blanco Cálido Interior - 24 volt - 120 led/m - Ancho de 8 mm - Largo de 10 mts *Controladora inalámbrica *La cinta se corta cada 15 leds",
-                "lm": "1800",
+                "img": "5007",
+                "code": "5050-UVI-24",
+                "description": "Rollo cinta led 5050 Ultra Violeta Interior - 24 volt - 1400 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
+                "lm": "1400",
                 "w/m": "14,4",
                 "prot": "IP20",
-                "led/m": "120",
+                "led/m": "60",
                 "ct": "-",
-                "pack": "1",
-                "price": "110,00"
+                "pack": "2",
+                "price": "120,00"
             }
         ]
     }
