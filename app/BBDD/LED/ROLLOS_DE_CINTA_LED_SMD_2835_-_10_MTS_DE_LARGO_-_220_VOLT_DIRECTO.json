@@ -3,7 +3,7 @@
         "img": "000003",
         "objects": [
             {
-                "img": "3001",
+                "img": "03-001",
                 "code": "2835-BFE",
                 "description": "Rollo cinta led 2835 Bco. Frio Exterior - 12 volt - 650 Lm/m - 4.8 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "2000",
@@ -15,7 +15,7 @@
                 "price": "12,00"
             },
             {
-                "img": "3002",
+                "img": "03-002",
                 "code": "2835-BCE",
                 "description": "Rollo cinta led 2835 Bco. Cálido Exterior - 12 volt - 650 Lm/m - 4.8 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "2000",
@@ -27,7 +27,7 @@
                 "price": "12,00"
             },
             {
-                "img": "3003",
+                "img": "03-003",
                 "code": "2835-BFI",
                 "description": "Rollo cinta led 2835 Bco. Frio Interior - 12 volt - 650 Lm/m - 4.8 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "2000",
@@ -39,7 +39,7 @@
                 "price": "12,00"
             },
             {
-                "img": "3004",
+                "img": "03-004",
                 "code": "2835-BCI",
                 "description": "Rollo cinta led 2835 Bco. Cálido Interior - 12 volt - 650 Lm/m - 4.8 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "2000",
@@ -51,7 +51,7 @@
                 "price": "12,00"
             },
             {
-                "img": "3005",
+                "img": "03-005",
                 "code": "2835-BCI-60-ZIGZAG",
                 "description": "Rollo cinta led 2835 Bco. Cálido Interior Zig Zag - 12 volt - 1000 Lm/m - 7.2 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "2000",
@@ -63,7 +63,7 @@
                 "price": "15,00"
             },
             {
-                "img": "3006",
+                "img": "03-006",
                 "code": "2835-BFE-120-14.4W",
                 "description": "Rollo cinta led 2835 Bco. Frio Exterior - 12 volt - 2000 Lm/m - 14.4 w/m - 120 led/m - IP65 - Largo de 5 mts",
                 "lm": "2000",
@@ -75,7 +75,7 @@
                 "price": "30,80"
             },
             {
-                "img": "3007",
+                "img": "03-007",
                 "code": "2835-BCE-120-14.4W",
                 "description": "Rollo cinta led 2835 Bco. Cálido Exterior - 12 volt - 2000 Lm/m - 14.4 w/m - 120 led/m - IP65 - Largo de 5 mts",
                 "lm": "2000",
@@ -87,7 +87,7 @@
                 "price": "30,80"
             },
             {
-                "img": "3008",
+                "img": "03-008",
                 "code": "2835-BNE-120-14.4W",
                 "description": "Rollo cinta led 2835 Bco. Neutro Exterior - 12 volt - 2000 Lm/m - 14.4w/m - 120 led/m - IP65 - Largo de 5 mts",
                 "lm": "2000",
@@ -99,7 +99,7 @@
                 "price": "30,80"
             },
             {
-                "img": "3009",
+                "img": "03-009",
                 "code": "2835-BFI-120",
                 "description": "Rollo cinta led 2835 Bco. Frio Interior - 12 volt - 1100 Lm/m - 14.4 w/m -  120 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -111,7 +111,7 @@
                 "price": "25,00"
             },
             {
-                "img": "30010",
+                "img": "03-0010",
                 "code": "2835-BCI-120",
                 "description": "Rollo cinta led 2835 Bco. Cálido Interior - 12 volt - 1100 Lm/m - 14.4 w/m - 120 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -123,7 +123,7 @@
                 "price": "25,00"
             },
             {
-                "img": "30011",
+                "img": "03-0011",
                 "code": "2835-AZI-120",
                 "description": "Rollo cinta led 2835 Azul Interior - 12 volt - 1100 Lm/m - 14.4 w/m - 120 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -135,7 +135,7 @@
                 "price": "25,00"
             },
             {
-                "img": "30012",
+                "img": "03-0012",
                 "code": "2835-BNI-120",
                 "description": "Rollo cinta led 2835 Bco. Neutro Interior - 12 volt - 1100 Lm/m - 14.4 w/m - 120 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -147,7 +147,7 @@
                 "price": "25,00"
             },
             {
-                "img": "30013",
+                "img": "03-0013",
                 "code": "2835-BCI-120-5",
                 "description": "Rollo cinta led 2835 Bco. Cálido Interior - 12 volt - 1100 Lm/m - 14.4 w/m - 120 led/m - IP20 - Ancho 5 mm  - Largo de 5 mts",
                 "lm": "1100",
@@ -159,7 +159,7 @@
                 "price": "32,00"
             },
             {
-                "img": "30014",
+                "img": "03-0014",
                 "code": "2835-BFI-120-5",
                 "description": "Rollo cinta led 2835 Bco. Frio Interior - 12 volt - 1100 Lm/m - 14.4 w/m -  120 led/m - IP20 - Ancho 5 mm -  Largo de 5 mts",
                 "lm": "1100",
@@ -171,7 +171,7 @@
                 "price": "32,00"
             },
             {
-                "img": "30015",
+                "img": "03-0015",
                 "code": "2835-BFI-240-25W",
                 "description": "Rollo cinta led 2835 Bco. Frio Interior - 12 volt - 3200 Lm/m - 25 w/m - 240 led/m - IP20 - Largo de 5 mts",
                 "lm": "3200",
@@ -183,7 +183,7 @@
                 "price": "44,00"
             },
             {
-                "img": "30016",
+                "img": "03-0016",
                 "code": "2835-BCI-240-25W",
                 "description": "Rollo cinta led 2835 Bco. Cálido Interior - 12 volt - 3200 Lm/m - 25 w/m - 240 led/m - IP20 - Largo de 5 mts",
                 "lm": "3200",

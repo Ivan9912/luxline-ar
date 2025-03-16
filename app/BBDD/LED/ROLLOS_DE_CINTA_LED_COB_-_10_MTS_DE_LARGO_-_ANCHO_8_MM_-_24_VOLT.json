@@ -3,7 +3,7 @@
         "img": "000007",
         "objects": [
             {
-                "img": "7001",
+                "img": "07-001",
                 "code": "COB320-BFI24",
                 "description": "Rollo cinta led COB Bco. Frio Interior - 24 volt - 2800 Lm/m - 15 w/m - 320 led/m - IP20 - Ancho de 8 mm - Largo de 10 mts",
                 "lm": "2800",
@@ -15,7 +15,7 @@
                 "price": "92,00"
             },
             {
-                "img": "7002",
+                "img": "07-002",
                 "code": "COB320-BCI24",
                 "description": "Rollo cinta led COB Bco. Cálido Interior - 24 volt - 2800 Lm/m - 15 w/m - 320 led/m - IP20 - Ancho de 8 mm - Largo de 10 mts",
                 "lm": "2800",
@@ -27,7 +27,7 @@
                 "price": "92,00"
             },
             {
-                "img": "7003",
+                "img": "07-003",
                 "code": "COB320-BNI24",
                 "description": "Rollo cinta led COB Bco. Neutro Interior - 24 volt - 2800 Lm/m - 15 w/m - 320 led/m - IP20 - Ancho de 8 mm - Largo de 10 mts",
                 "lm": "2800",
@@ -39,7 +39,7 @@
                 "price": "92,00"
             },
             {
-                "img": "7004",
+                "img": "07-004",
                 "code": "COB320-AZI24",
                 "description": "Rollo cinta led COB Azul Interior - 24 volt - 2800 Lm/m - 15 w/m - 320 led/m - IP20 - Ancho de 8 mm - Largo de 10 mts",
                 "lm": "2800",
@@ -51,7 +51,7 @@
                 "price": "140,00"
             },
             {
-                "img": "7005",
+                "img": "07-005",
                 "code": "COB320-RI24",
                 "description": "Rollo cinta led COB Rojo Interior - 24 volt- 2800 Lm/m - 15 w/m - 320 led/m - IP20 - Ancho de 8 mm - Largo de 10 mts",
                 "lm": "2800",
@@ -63,7 +63,7 @@
                 "price": "140,00"
             },
             {
-                "img": "7006",
+                "img": "07-006",
                 "code": "COB320-VI24",
                 "description": "Rollo cinta led COB Verde Interior - 24 volt - 2800 Lm/m - 15 w/m - 320 led/m - IP20 - Ancho de 8 mm - Largo de 10 mts",
                 "lm": "2800",
@@ -75,7 +75,7 @@
                 "price": "140,00"
             },
             {
-                "img": "7007",
+                "img": "07-007",
                 "code": "COB320-RGBI24",
                 "description": "Rollo cinta led COB RGB Interior - 24 volt - 2800 Lm/m - 15 w/m - 320 led/m - IP20 - Ancho de 8 mm - Largo de 10 mts",
                 "lm": "2800",

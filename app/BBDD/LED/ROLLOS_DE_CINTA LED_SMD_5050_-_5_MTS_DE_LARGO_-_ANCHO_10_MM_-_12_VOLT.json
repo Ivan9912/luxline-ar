@@ -3,7 +3,7 @@
         "img": "000004",
         "objects": [
             {
-                "img": "4001",
+                "img": "04-001",
                 "code": "5050-BFE-O",
                 "description": "Rollo cinta led 4040 Bco. Frio Exterior - 12 volt - 1100 Lm/m - 12 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -15,7 +15,7 @@
                 "price": "18,00"
             },
             {
-                "img": "4002",
+                "img": "04-002",
                 "code": "5050-BCE-O",
                 "description": "Rollo cinta led 4040 Bco. Cálido Exterior - 12 volt - 1100 Lm/m - 12 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -27,7 +27,7 @@
                 "price": "18,00"
             },
             {
-                "img": "4003",
+                "img": "04-003",
                 "code": "5050-BFI-O",
                 "description": "RRollo cinta led 4040 Bco. Frio Interior - 12 volt  - 1100 Lm/m - 12 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -39,7 +39,7 @@
                 "price": "14,00"
             },
             {
-                "img": "4004",
+                "img": "04-004",
                 "code": "5050-BCI-O",
                 "description": "Rollo cinta led 4040 Bco. Cálido Interior - 12 volt  - 1100 Lm/m - 12 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -51,7 +51,7 @@
                 "price": "14,00"
             },
             {
-                "img": "4005",
+                "img": "04-005",
                 "code": "5050-BFE",
                 "description": "Rollo cinta led 5050 Bco. Frio Exterior - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -63,7 +63,7 @@
                 "price": "30,80"
             },
             {
-                "img": "4006",
+                "img": "04-006",
                 "code": "5050-BFS",
                 "description": "Rollo cinta led 5050 Bco. Frio Sumergible - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP67 - Largo de 5 mts",
                 "lm": "1100",
@@ -75,7 +75,7 @@
                 "price": "SIN STOCK"
             },
             {
-                "img": "4007",
+                "img": "04-007",
                 "code": "5050-BCE",
                 "description": "Rollo cinta led 5050 Bco. Cálido Exterior - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -87,7 +87,7 @@
                 "price": "30,80"
             },
             {
-                "img": "4008",
+                "img": "04-008",
                 "code": "5050-BNE",
                 "description": "Rollo cinta led 5050 Bco. Neutro Exterior - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -99,7 +99,7 @@
                 "price": "30,80"
             },
             {
-                "img": "4009",
+                "img": "04-009",
                 "code": "5050-AZE",
                 "description": "Rollo cinta led 5050 Azul Exterior - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -111,7 +111,7 @@
                 "price": "30,80"
             },
             {
-                "img": "40010",
+                "img": "04-0010",
                 "code": "5050-RE",
                 "description": "Rollo cinta led 5050 Rojo Exterior - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -123,7 +123,7 @@
                 "price": "30,80"
             },
             {
-                "img": "40011",
+                "img": "04-0011",
                 "code": "5050-AME",
                 "description": "Rollo cinta led 5050 Amarillo Exterior - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -135,7 +135,7 @@
                 "price": "30,80"
             },
             {
-                "img": "40012",
+                "img": "04-0012",
                 "code": "5050-VE",
                 "description": "Rollo cinta led 5050 Verde Exterior - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -147,7 +147,7 @@
                 "price": "30,80"
             },
             {
-                "img": "40013",
+                "img": "04-0013",
                 "code": "5050-RGBE",
                 "description": "Rollo cinta led 5050 RGB Exterior - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -159,7 +159,7 @@
                 "price": "30,80"
             },
             {
-                "img": "40014",
+                "img": "04-0014",
                 "code": "5050-RGBEE",
                 "description": "Rollo cinta led 5050 RGB Exterior Efecto - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP65 - Largo de 5 mts",
                 "lm": "1100",
@@ -171,7 +171,7 @@
                 "price": "33,00"
             },
             {
-                "img": "40015",
+                "img": "04-0015",
                 "code": "5050-RGBES",
                 "description": "Rollo cinta led 5050 RGB Exterior Sumergible - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP67 - Largo de 5 mts",
                 "lm": "1100",
@@ -183,7 +183,7 @@
                 "price": "SIN STOCK"
             },
             {
-                "img": "40016",
+                "img": "04-0016",
                 "code": "5050-BFI",
                 "description": "Rollo cinta led 5050 Bco. Frio Interior - 12 volt  - 1100 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -195,7 +195,7 @@
                 "price": "25,00"
             },
             {
-                "img": "40017",
+                "img": "04-0017",
                 "code": "5050-BCI",
                 "description": "Rollo cinta led 5050 Bco. Cálido Interior - 12 volt  - 1100 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -207,7 +207,7 @@
                 "price": "25,00"
             },
             {
-                "img": "40018",
+                "img": "04-0018",
                 "code": "5050-AZI",
                 "description": "Rollo cinta led 5050 Azul Interior - 12 volt  - 1100 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -219,7 +219,7 @@
                 "price": "25,00"
             },
             {
-                "img": "40019",
+                "img": "04-0019",
                 "code": "5050-RI",
                 "description": "Rollo cinta led 5050 Rojo Interior - 12 volt  - 1100 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -231,7 +231,7 @@
                 "price": "25,00"
             },
             {
-                "img": "40020",
+                "img": "04-0020",
                 "code": "5050-AMI",
                 "description": "Rollo cinta led 5050 Amarillo Interior - 12 volt  - 1100 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -243,7 +243,7 @@
                 "price": "25,00"
             },
             {
-                "img": "40021",
+                "img": "04-0021",
                 "code": "5050-VI",
                 "description": "Rollo cinta led 5050 Verde Interior - 12 volt - 1100 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -255,7 +255,7 @@
                 "price": "25,00"
             },
             {
-                "img": "40022",
+                "img": "04-0022",
                 "code": "5050-UVI",
                 "description": "Rollo cinta led 5050 Ultra Violeta Interior - 12 volt  - 1100 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -267,7 +267,7 @@
                 "price": "120,00"
             },
             {
-                "img": "40023",
+                "img": "04-0023",
                 "code": "5050-RGBI",
                 "description": "Rollo cinta led 5050 RGB Interior - 12 volt  - 1100 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1100",
@@ -279,7 +279,7 @@
                 "price": "25,00"
             },
             {
-                "img": "40024",
+                "img": "04-0024",
                 "code": "5050-RGBWWI",
                 "description": "Rollo cinta led 5050 RGB + Bco. Cálido Interior - 12 volt  - 1500 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1500",
@@ -291,7 +291,7 @@
                 "price": "96,00"
             },
             {
-                "img": "40025",
+                "img": "04-0025",
                 "code": "5050-RGBWI",
                 "description": "Rollo cinta led 5050 RGB + Bco. Frio Interior - 12 volt  - 1500 Lm/m - 14.4 w/m - 60 led/m - IP20 - Largo de 5 mts",
                 "lm": "1500",

@@ -3,7 +3,7 @@
         "img": "0000014",
         "objects": [
             {
-                "img": "14001",
+                "img": "014-001",
                 "code": "AMP-MONO-5",
                 "description": "Mini amplificador monoctromático - 6 Amp recomendable- 12/24 volt",
                 "amp": "6",
@@ -13,7 +13,7 @@
                 "price": "5,00"
             },
             {
-                "img": "14002",
+                "img": "014-002",
                 "code": "AMP-RGB-5",
                 "description": "Mini amplificador RGB - 6 Amp recomendable - 12/24 volt",
                 "amp": "6",
@@ -23,7 +23,7 @@
                 "price": "5,00"
             },
             {
-                "img": "14003",
+                "img": "014-003",
                 "code": "AMP-RGB-24",
                 "description": "Amplificador metálico RGB - 15 Amp recomendable - 8 Amp por canal maximo - 12/24 volt",
                 "amp": "15",

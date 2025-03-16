@@ -1,9 +1,9 @@
 [
     {
-        "img": "000001",
+        "img": "00-00001",
         "objects": [
             {
-                "img": "0001",
+                "img": "00-001",
                 "code": "2202835-BFI-120",
                 "description": "Rollo cinta led 2835 Bco. Frio Interior - 220 volt - 1800 Lm/m - 14.4 w/m - 120 led/m - IP20 - Largo de 10 mts",
                 "lm": "1800",
@@ -15,7 +15,7 @@
                 "price": "60,00"
             },
             {
-                "img": "0002",
+                "img": "00-002",
                 "code": "2202835-BCI-120",
                 "description": "Rollo cinta led 2835 Bco. Cálido Interior - 220 volt - 1800 Lm/m - 14.4 w/m - 120 led/m - IP20 - Largo de 10 mts",
                 "lm": "1800",
@@ -27,7 +27,7 @@
                 "price": "60,00"
             },
             {
-                "img": "0003",
+                "img": "00-003",
                 "code": "2202835-BNI-120",
                 "description": "Rollo cinta led 2835 Bco. Neutro Interior - 220 volt - 1800 Lm/m - 14.4 w/m - 120 led/m - IP20 - Largo de 10 mts",
                 "lm": "1800",
