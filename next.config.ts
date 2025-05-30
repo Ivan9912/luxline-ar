@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Agrega aquí el host (y puerto) desde el que haces las peticiones
+  allowedDevOrigins: ['172.16.5.6:3000'],
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+  // ...otras opciones que ya tengas
+}
 
-export default nextConfig;
+module.exports = nextConfig
