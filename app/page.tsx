@@ -1,10 +1,8 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import Footer from "../components/Footer"
-import Nav from "../components/Navbar"
 import productsData from '../app/BBDD/PRODUCTS_LIST.json'
-import Card from '../components/ImageCard'
+import { ImageCard as Card, Footer as Footer, Nav as Nav} from '../components'
 
 export const revalidate = 86400 // Revalidate every 24 hours
 
