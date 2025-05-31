@@ -35,9 +35,9 @@ export default function Page() {
 
   return (
     <>
-      <body className="font-sans">
+      <body className="font-sans bg-gray-100 h-screen w-screen">
         <Nav />
-        <main className="bg-gray-100 flex items-center justify-center py-20 min-h-screen">
+        <main className="flex items-center justify-center py-20 min-h-screen">
           <section className="grid grid-cols-3 gap-16">
             {categories.map((cat, i) => {
 

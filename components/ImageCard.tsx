@@ -26,7 +26,7 @@ const ImageCard: FC<ImageCardProps> = ({
       {/* Overlay de fondo */}
       <div className={`
         absolute inset-0
-        group-hover:bg-gradient-to-br from-transparent from-10% via-black via-14% to-black/90 to-100%
+        group-hover:bg-gradient-to-br from-yellow-300/40 from-10% via-black via-14% to-black/90 to-100%
         transition-opacity duration-300
         group-hover:opacity-95
       `} />
