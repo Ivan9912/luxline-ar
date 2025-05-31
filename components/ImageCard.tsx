@@ -18,46 +18,49 @@ const ImageCard: FC<ImageCardProps> = ({
   alt = 'Imagen'
 }) => {
   return (
-    <div className="group rounded-lg rounded">
+    <div className="relative flex justify-center group w-64 h-64 overflow-hidden rounded-lg ">
       {/* Overlay de fondo */}
       <div className={`
-        bg-gradient-to-br from-black to-transparent 
+        absolute inset-0
+        bg-gradient-to-br from-white from-0% via-black via-5% to-black/90 to-100%
         transition-opacity duration-300
-        group-hover:opacity-60
+        group-hover:opacity-95
       `} />
 
       {/* Imagen con link */}
-      <Link href={imageLink}>
+      <Link href={imageLink} className="flex flex-col items-center justify-center w-4/5 h-4/5">
         <img
           src={imageSrc}
           alt={alt}
           className={`
-              object-cover
-              rounded opacity-90
+              w-10/12 h-10/12 object-cover
+              rounded-lg
+              opacity-90
               transition-transform duration-300
               group-hover:scale-95
             `}
         />
+        <p>Hola</p>
       </Link>
 
       {/* Botones */}
       <div className={`
-        absolute inset-0
-        flex items-center justify-center space-x-4
+        absolute inset-2
+        flex items-end justify-center space-x-4
         opacity-0 group-hover:opacity-100
         transition-opacity duration-300
       `}>
-        <Link href={acceptLink} className='bg-white text-black px-4 py-2
-            border-2 border-white rounded-md
-            transition-colors duration-300
-            hover:bg-black hover:text-white'>
-          Aceptar
-        </Link>
-        <Link href={cancelLink} className='px-4 py-2
+        <Link href={acceptLink} className='px-4 py-2 text-xs text-white bg-transparent
             border-2 border-white rounded-md
             transition-colors duration-300
             hover:bg-white hover:text-black'>
-          Cancelar
+          Ficha Técnica
+        </Link>
+        <Link href={cancelLink} className='px-4 py-2 text-xs text-white bg-transparent
+            border-2 border-white rounded-md
+            transition-colors duration-300
+            hover:bg-white hover:text-black'>
+          Ver producto
         </Link>
       </div>
     </div>

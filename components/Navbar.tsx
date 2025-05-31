@@ -3,8 +3,8 @@ import Link from "next/link"
 const Nav = () => {
     return (
         (
-            <header className="flex items-center justify-between px-8 py-4 bg-white shadow-sm">
-                <div className="w-full bg-pink-500/50">
+            <header className="flex items-center justify-between px-8 py-4 h-1/12 bg-white shadow-sm">
+                <div className="w-full bg-transparent">
                     <h1 className="text-4xl font-bold text-center mb-8">Luxline</h1>
                 </div>
                 <nav className="flex space-x-6">
