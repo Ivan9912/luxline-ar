@@ -8,6 +8,8 @@ type ImageCardProps = {
   acceptLink: string
   cancelLink: string
   alt?: string
+  name: string
+  counts: any
 }
 
 const ImageCard: FC<ImageCardProps> = ({
@@ -15,7 +17,9 @@ const ImageCard: FC<ImageCardProps> = ({
   imageLink,
   acceptLink,
   cancelLink,
-  alt = 'Imagen'
+  alt = 'Imagen',
+  name,
+  counts
 }) => {
   return (
     <div className="relative flex justify-center group w-64 h-64 overflow-hidden rounded-lg ">
@@ -40,7 +44,13 @@ const ImageCard: FC<ImageCardProps> = ({
               group-hover:scale-95
             `}
         />
-        <p>Hola</p>
+        <div className='nth-[1]:text-white'>{name}</div>
+        {/* {counts.map((typeItem:any) => {
+          const count = typeItem.list_of_items
+            ? Object.keys(typeItem.list_of_items).length
+            : typeItem.content.length}
+        )
+        } */}
       </Link>
 
       {/* Botones */}

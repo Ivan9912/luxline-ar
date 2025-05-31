@@ -2,6 +2,7 @@
     {
         "LED": {
             "name": "Led",
+            "img": "bulbos.png",
             "route": "/",
             "content": [
                 "Rollos leds",
