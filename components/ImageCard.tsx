@@ -32,7 +32,7 @@ const ImageCard: FC<ImageCardProps> = ({
 
       {/* Imagen con link */}
       <div className="flex flex-col items-center justify w-4/5 h-4/5 absolute">
-        <Link href={imageLink} className='w-full flex items-center justify-center'>
+        <div className='w-full flex items-center justify-center'>
           <img
             src={imageSrc}
             alt={alt}
@@ -44,7 +44,7 @@ const ImageCard: FC<ImageCardProps> = ({
               group-hover:scale-95
             `}
           />
-        </Link>
+        </div>
         <p><span className='text-black font-normal group-hover:text-white duration-300 group-hover:font-bold'>{name}</span></p>
         {/* Contador de productos debajo del nombre */}
         <p className="text-xs font-light text-gray-600 group-hover:text-white duration-300">
@@ -59,13 +59,13 @@ const ImageCard: FC<ImageCardProps> = ({
         opacity-0 group-hover:opacity-100
         transition-opacity duration-300
       `}>
-        <Link href={acceptLink} className='px-4 py-2 text-xs text-white bg-transparent
+        <Link href={acceptLink.toLowerCase()} className='px-4 py-2 text-xs text-white bg-transparent
             border-2 border-white rounded-md
             transition-colors duration-300
             hover:bg-white hover:text-black'>
           Ficha técnica
         </Link>
-        <Link href={cancelLink} className='px-4 py-2 text-xs text-white bg-transparent
+        <Link href={cancelLink.toLowerCase()}  className='px-4 py-2 text-xs text-white bg-transparent
             border-2 border-white rounded-md
             transition-colors duration-300
             hover:bg-white hover:text-black'>

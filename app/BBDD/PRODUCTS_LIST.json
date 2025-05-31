@@ -15,6 +15,7 @@
                 "Rollos": {
                     "name": "Rollos leds",
                     "route": "/",
+                    "img": "dicroicas.png",
                     "content": [
                         "ROLLOS DE CINTA LED SMD 2835 - 10 MTS DE LARGO - 220 VOLT DIRECTO",
                         "ROLLOS DE CINTA PIXEL / KIT DE CINTA LED CON CONTROLADORA",
