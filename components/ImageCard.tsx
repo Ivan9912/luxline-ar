@@ -26,13 +26,13 @@ const ImageCard: FC<ImageCardProps> = ({
       {/* Overlay de fondo */}
       <div className={`
         absolute inset-0
-        bg-gradient-to-br from-white from-0% via-black via-5% to-black/90 to-100%
+        group-hover:bg-gradient-to-br from-white from-0% via-black via-5% to-black/90 to-100%
         transition-opacity duration-300
         group-hover:opacity-95
       `} />
 
       {/* Imagen con link */}
-      <Link href={imageLink} className="flex flex-col items-center justify-center w-4/5 h-4/5">
+      <Link href={imageLink} className="flex flex-col items-center justify w-4/5 h-4/5 absolute pb-6">
         <img
           src={imageSrc}
           alt={alt}
@@ -44,13 +44,11 @@ const ImageCard: FC<ImageCardProps> = ({
               group-hover:scale-95
             `}
         />
-        <div className='nth-[1]:text-white'>{name}</div>
-        {/* {counts.map((typeItem:any) => {
-          const count = typeItem.list_of_items
-            ? Object.keys(typeItem.list_of_items).length
-            : typeItem.content.length}
-        )
-        } */}
+        <p className='pt-2' ><span className='text-black font-normal group-hover:text-white duration-300 group-hover:font-bold'>{name}</span></p>
+        {/* Contador de productos debajo del nombre */}
+        <p className="text-xs font-light text-gray-600 group-hover:text-white duration-300">
+          {counts} {counts === 1 ? 'Producto' : 'Productos'}
+        </p>
       </Link>
 
       {/* Botones */}
