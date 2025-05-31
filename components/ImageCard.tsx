@@ -22,11 +22,11 @@ const ImageCard: FC<ImageCardProps> = ({
   counts
 }) => {
   return (
-    <div className="relative flex justify-center group w-64 h-64 overflow-hidden rounded-lg ">
+    <div className="relative flex justify-center group shadow-lg hover:shadow-xl/30 w-64 h-64 overflow-hidden rounded-lg ">
       {/* Overlay de fondo */}
       <div className={`
         absolute inset-0
-        group-hover:bg-gradient-to-br from-white from-0% via-black via-5% to-black/90 to-100%
+        group-hover:bg-gradient-to-br from-transparent from-10% via-black via-14% to-black/90 to-100%
         transition-opacity duration-300
         group-hover:opacity-95
       `} />

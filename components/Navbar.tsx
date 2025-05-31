@@ -11,12 +11,12 @@ const Nav = () => {
                     <Link href="/productos" className="text-blue-600 hover:underline">
                         Productos
                     </Link>
-                    <Link href="/contacto" className="text-gray-400 hover:underline">
+                    <Link href="/contacto" className="text-blue-600 hover:underline">
                         Contacto
                     </Link>
                     <Link target='_blank' href={'https://instagram.com'}
                         rel="noopener noreferrer"
-                        className="text-gray-400"
+                        className="text-gray-50 underline"
                     >
                         📷
                     </Link>
