@@ -3,7 +3,6 @@ import { FC } from 'react'
 
 type ImageCardProps = {
   imageSrc: string
-  imageLink: string
   acceptLink: string
   cancelLink: string
   alt?: string
@@ -13,7 +12,6 @@ type ImageCardProps = {
 
 const ImageCard: FC<ImageCardProps> = ({
   imageSrc,
-  imageLink = '/',
   acceptLink,
   cancelLink,
   alt = 'Imagen',

@@ -35,7 +35,7 @@ export default function Page() {
 
   return (
     <>
-      <main className="flex flex-col items-center justify-center py-20 min-h-screen">
+      <main className="flex flex-col items-center justify-center pb-20 pt-[7.4rem] min-h-screen">
         <h1 className="text-3xl font-bold text-center mb-10">Nuestras Categorías</h1>
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
           {categories.map((cat, i) => {
@@ -44,11 +44,10 @@ export default function Page() {
             const slug = cat.route.replace(/^\//, '').toLowerCase() // "/led" → "led"
 
             return (
-              <div key={i} className="flex justify-center">
+              <div key={i} className="flex justify-center mt-56">
                 <Card
                   name={cat.name}
                   imageSrc={`/${cat.img}`}    // p.ej. "/bulbos.png"
-                  imageLink={`/${slug}`}
                   acceptLink={`/${slug}`}
                   cancelLink={`/${slug}`}
                   counts={count}
