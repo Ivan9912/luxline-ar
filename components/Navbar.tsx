@@ -1,5 +1,4 @@
-// components/Navbar.tsx
-'use client' // ← Importante: convierte este archivo en client component
+'use client'
 
 import Link from 'next/link'
 import { FC, useState } from 'react'

@@ -1,4 +1,3 @@
-// app/page.tsx
 import React from 'react'
 import productsData from '../app/BBDD/PRODUCTS_LIST.json'
 import { ImageCard as Card } from '../components'
