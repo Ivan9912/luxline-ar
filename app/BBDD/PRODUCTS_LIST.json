@@ -3,7 +3,7 @@
         "LED": {
             "name": "Led",
             "img": "bulbos.png",
-            "route": "/",
+            "route": "/led",
             "content": [
                 "Rollos leds",
                 "Kits RGB Y lámparas",
@@ -137,7 +137,7 @@
         },
         "MANGUERAS_DE_NEON": {
             "name": "Mangueras de neón",
-            "route": "/",
+            "route": "/neon",
             "img": "bipin.png",
             "content": [
                 "MANGUERAS NEÓN - SECCIÓN 8 x 16 MM - 100 MTS DE LARGO - 220 VOLT",
@@ -212,7 +212,7 @@
         },
         "FUENTES": {
             "name": "Fuentes",
-            "route": "/",
+            "route": "/fuentes",
             "img": "ar111.png",
             "content": [
                 "FUENTES METÁLICAS - 12 VOLT",
@@ -263,7 +263,7 @@
         },
         "PERFILERIA": {
             "name": "Perfileria",
-            "route": "/",
+            "route": "/perfiles",
             "img": "dicroicas.png",
             "content": [
                 "PERFIL DE ALUMINIO DE OBRA",
@@ -362,7 +362,7 @@
         },
         "SENSORES": {
             "name": "Sensores",
-            "route": "/",
+            "route": "/sensores",
             "img": "filamento.png",
             "content": [
                 ""
@@ -371,7 +371,7 @@
         },
         "CABLES": {
             "name": "Cables",
-            "route": "/",
+            "route": "/cables",
             "img": "tubos.png",
             "content": [
                 ""

@@ -37,19 +37,16 @@ export default function Page() {
     <>
       <body className="font-sans">
         <Nav />
-        <main className="bg-gray-100 flex items-center justify-center py-20 h-auto">
+        <main className="bg-gray-100 flex items-center justify-center py-20 min-h-screen">
           <section className="grid grid-cols-3 gap-16">
             {categories.map((cat, i) => {
-              // ────────────────────────────────────────────────
-              // 1. Tomamos la longitud del array `content`
-              //    (es decir, cuántos strings hay en esa categoría).
-              // ────────────────────────────────────────────────
+
+              // 1. Tomamos la longitud del array `content (es decir, cuántos strings hay en esa categoría).
+
               const count = Array.isArray(cat.content) ? cat.content.length : 0;
 
-              // ────────────────────────────────────────────────
-              // 2. Devolvemos UN SOLO ImageCard por cada categoría,
-              //    usando `count` para mostrar cuántos items hay.
-              // ────────────────────────────────────────────────
+              // 2. Devolvemos UN SOLO ImageCard por cada categoría usando `count` para mostrar cuántos items hay.
+
               return (
                 <ImageCard
                   key={i}                  // clave única por categoría
@@ -57,7 +54,7 @@ export default function Page() {
                   imageSrc={cat.img}       // imagen de la categoría
                   imageLink="/"            // ajusta la ruta real que quieras
                   acceptLink="/"           // ajusta la ruta real que quieras
-                  cancelLink="/"           // ajusta la ruta real que quieras
+                  cancelLink={cat.route}   // ajusta la ruta real que quieras
                   counts={count}           // número de strings en `cat.content`
                 />
               );

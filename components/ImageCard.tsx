@@ -14,7 +14,7 @@ type ImageCardProps = {
 
 const ImageCard: FC<ImageCardProps> = ({
   imageSrc,
-  imageLink,
+  imageLink = '/',
   acceptLink,
   cancelLink,
   alt = 'Imagen',
@@ -22,7 +22,7 @@ const ImageCard: FC<ImageCardProps> = ({
   counts
 }) => {
   return (
-    <div className="relative flex justify-center group shadow-lg hover:shadow-xl/30 w-64 h-64 overflow-hidden rounded-lg ">
+    <div className="relative flex justify-center group shadow-lg hover:shadow-xl/30 w-72 h-72 overflow-hidden rounded-lg ">
       {/* Overlay de fondo */}
       <div className={`
         absolute inset-0
@@ -32,24 +32,26 @@ const ImageCard: FC<ImageCardProps> = ({
       `} />
 
       {/* Imagen con link */}
-      <Link href={imageLink} className="flex flex-col items-center justify w-4/5 h-4/5 absolute pb-6">
-        <img
-          src={imageSrc}
-          alt={alt}
-          className={`
+      <div className="flex flex-col items-center justify w-4/5 h-4/5 absolute">
+        <Link href={imageLink} className='w-full flex items-center justify-center'>
+          <img
+            src={imageSrc}
+            alt={alt}
+            className={`
               w-10/12 h-10/12 object-cover
               rounded-lg
               opacity-90
               transition-transform duration-300
               group-hover:scale-95
             `}
-        />
-        <p className='pt-2' ><span className='text-black font-normal group-hover:text-white duration-300 group-hover:font-bold'>{name}</span></p>
+          />
+        </Link>
+        <p><span className='text-black font-normal group-hover:text-white duration-300 group-hover:font-bold'>{name}</span></p>
         {/* Contador de productos debajo del nombre */}
         <p className="text-xs font-light text-gray-600 group-hover:text-white duration-300">
           {counts} {counts === 1 ? 'Producto' : 'Productos'}
         </p>
-      </Link>
+      </div>
 
       {/* Botones */}
       <div className={`
@@ -62,7 +64,7 @@ const ImageCard: FC<ImageCardProps> = ({
             border-2 border-white rounded-md
             transition-colors duration-300
             hover:bg-white hover:text-black'>
-          Ficha Técnica
+          Ficha técnica
         </Link>
         <Link href={cancelLink} className='px-4 py-2 text-xs text-white bg-transparent
             border-2 border-white rounded-md
