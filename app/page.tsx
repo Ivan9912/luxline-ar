@@ -33,18 +33,19 @@ export default function Page() {
   const categories = Object.values(categoriesMap)
 
   return (
-    <div>
+    <>
+    <body className="font-sans">
       <Nav />
-      <body className="font-sans">
-        <main className=" bg-gray-100">
-          <section className="text-center w-64 grid grid-cols-3 px-12">
+
+        <main className=" bg-gray-100 flex justify-center mt-4">
+          <section className="w-3/5 mr-[20px] ml-[60px] mb-[100px] grid grid-cols-3">
             <Card acceptLink={'/'} imageLink={'/'} key={`1`} cancelLink={'/'} imageSrc="bulbos.png" />
             <Card acceptLink={'/'} imageLink={'/'} key={`2`} cancelLink={'/'} imageSrc="bulbos.png" />
             <Card acceptLink={'/'} imageLink={'/'} key={`3`} cancelLink={'/'} imageSrc="bulbos.png" />
           </section>
-        </main>
-      </body>
+        </main >
       <Footer />
-    </div>
+    </body >
+    </>
   )
 }

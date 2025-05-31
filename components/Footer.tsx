@@ -1,7 +1,9 @@
 const Footer = () => {
     return (
-        <footer className="w-full mt-12 text-pink-400/50">
-            Pie de Página...
+        <footer >
+            <h2 className="w-full mt-[20px] bg-[255,0,255]">
+                Pie de Página...
+            </h2>
         </footer>
     )
 };

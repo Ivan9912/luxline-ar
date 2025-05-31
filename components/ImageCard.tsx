@@ -18,7 +18,7 @@ const ImageCard: FC<ImageCardProps> = ({
   alt = 'Imagen'
 }) => {
   return (
-    <div className="group rounded-lg">
+    <div className="group rounded-lg rounded">
       {/* Overlay de fondo */}
       <div className={`
         bg-gradient-to-br from-black to-transparent 
@@ -33,8 +33,7 @@ const ImageCard: FC<ImageCardProps> = ({
           alt={alt}
           className={`
               object-cover
-              rounded-lg
-              opacity-90
+              rounded opacity-90
               transition-transform duration-300
               group-hover:scale-95
             `}
