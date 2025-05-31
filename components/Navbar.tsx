@@ -2,25 +2,26 @@
 
 import Link from 'next/link'
 import { FC, useState } from 'react'
-import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi' // Iconos para “hamburguesa” y “X”
+import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi'
 
 const Navbar: FC = () => {
-  // 1. Creamos un estado para saber si el menú móvil está abierto (true) o cerrado (false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  // 2. Función para alternar ese estado
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen((prev) => !prev)
-  }
+  const toggleMobileMenu = () => setMobileMenuOpen(prev => !prev)
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-sm transition-colors duration-300 hover:bg-white">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        <div className="flex items-center justify-between h-16">
+    <nav
+      className="
+        fixed inset-x-0 top-0 h-16 
+        bg-white/30 backdrop-blur-sm 
+        hover:bg-white 
+        transition-colors duration-200
+        shadow-md z-50
+      "
+    >
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 h-full">
+        <div className="flex items-center justify-between h-full">
           
-          {/* -----------------------------------------------------------
-              1. Branding “LUXLINE” con animación y tamaño text-3xl
-          ----------------------------------------------------------- */}
+          {/* Branding “LUXLINE” (text-3xl, swap de colores en hover) */}
           <Link href="/" className="group flex items-center">
             <span
               className={`
@@ -53,9 +54,7 @@ const Navbar: FC = () => {
             </span>
           </Link>
 
-          {/* -----------------------------------------------------------
-              2. Menú de navegación (escritorio)
-          ----------------------------------------------------------- */}
+          {/* Menú de navegación (desktop) */}
           <div className="hidden md:flex space-x-4">
             <Link
               href="/productos"
@@ -95,9 +94,7 @@ const Navbar: FC = () => {
             </Link>
           </div>
 
-          {/* -----------------------------------------------------------
-              3. Botón hamburguesa (móvil)
-          ----------------------------------------------------------- */}
+          {/* Botón hamburguesa (mobile) */}
           <div className="md:hidden">
             <button
               type="button"
@@ -123,44 +120,26 @@ const Navbar: FC = () => {
         </div>
       </div>
 
-      {/* -----------------------------------------------------------
-          4. Menú móvil (desplegable según estado)
-      ----------------------------------------------------------- */}
-      {/* 
-        - Si mobileMenuOpen es false, aplicamos “hidden” (no se ve). 
-        - Si es true, “block” para verlo.
-      */}
+      {/* Menú móvil desplegable */}
       <div className={`${mobileMenuOpen ? 'block' : 'hidden'} md:hidden`} id="mobile-menu">
-        <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
           <Link
             href="/productos"
-            className="
-              block bg-transparent text-black px-3 py-2 rounded
-              hover:text-yellow-400 active:text-cyan-500
-              transition-all duration-200 ease-in-out
-            "
-            onClick={() => setMobileMenuOpen(false)} // cierra al hacer click en un enlace
+            className="block bg-transparent text-black px-3 py-2 rounded hover:text-yellow-400 active:text-cyan-500 transition-all duration-200 ease-in-out"
+            onClick={() => setMobileMenuOpen(false)}
           >
             Productos
           </Link>
           <Link
             href="/nosotros"
-            className="
-              block bg-transparent text-black px-3 py-2 rounded
-              hover:text-yellow-400 active:text-cyan-500
-              transition-all duration-200 ease-in-out
-            "
+            className="block bg-transparent text-black px-3 py-2 rounded hover:text-yellow-400 active:text-cyan-500 transition-all duration-200 ease-in-out"
             onClick={() => setMobileMenuOpen(false)}
           >
             Nosotros
           </Link>
           <Link
             href="/contacto"
-            className="
-              block bg-transparent text-black px-3 py-2 rounded
-              hover:text-yellow-400 active:text-cyan-500
-              transition-all duration-200 ease-in-out
-            "
+            className="block bg-transparent text-black px-3 py-2 rounded hover:text-yellow-400 active:text-cyan-500 transition-all duration-200 ease-in-out"
             onClick={() => setMobileMenuOpen(false)}
           >
             Contacto
