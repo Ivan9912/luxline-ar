@@ -1,10 +1,10 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
+// app/page.tsx
+import React from 'react'
 import productsData from '../app/BBDD/PRODUCTS_LIST.json'
-import { ImageCard as Card, Footer as Footer, ImageCard, Nav as Nav } from '../components'
+import { ImageCard as Card } from '../components'
 
-export const revalidate = 86400 // Revalidate every 24 hours
+// Revalidate cada 24 horas (ISR)
+export const revalidate = 86400
 
 // Tipos según PRODUCTS_LIST.json
 interface ListItem {
@@ -35,34 +35,27 @@ export default function Page() {
 
   return (
     <>
-      <body className="font-sans bg-gray-100 h-screen w-screen">
-        <Nav />
-        <main className="flex items-center justify-center py-20 min-h-screen">
-          <section className="grid grid-cols-3 gap-16">
-            {categories.map((cat, i) => {
+      <main className="flex flex-col items-center justify-center py-20 min-h-screen">
+        <h1 className="text-3xl font-bold text-center mb-10">Nuestras Categorías</h1>
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
+          {categories.map((cat, i) => {
+            // Número de strings en cat.content
+            const count = Array.isArray(cat.content) ? cat.content.length : 0
 
-              // 1. Tomamos la longitud del array `content (es decir, cuántos strings hay en esa categoría).
-
-              const count = Array.isArray(cat.content) ? cat.content.length : 0;
-
-              // 2. Devolvemos UN SOLO ImageCard por cada categoría usando `count` para mostrar cuántos items hay.
-
-              return (
-                <ImageCard
-                  key={i}                  // clave única por categoría
-                  name={cat.name}          // nombre de la categoría
-                  imageSrc={cat.img}       // imagen de la categoría
-                  imageLink="/"            // ajusta la ruta real que quieras
-                  acceptLink="/"           // ajusta la ruta real que quieras
-                  cancelLink={cat.route}   // ajusta la ruta real que quieras
-                  counts={count}           // número de strings en `cat.content`
-                />
-              );
-            })}
-          </section>
-        </main>
-        <Footer />
-      </body >
+            return (
+              <Card
+                key={i}                                 // clave única por categoría
+                name={cat.name}                         // nombre de la categoría
+                imageSrc={cat.img}                      // imagen de la categoría
+                imageLink={cat.route}                   // ajusta la ruta real que quieras
+                acceptLink={`/ficha/${cat.route}`}      // ajusta la ruta real que quieras
+                cancelLink={`/producto/${cat.route}`}   // ajusta la ruta real que quieras
+                counts={count}                          // número de strings en `cat.content`
+              />
+            );
+          })}
+        </section>
+      </main>
     </>
   )
 }
