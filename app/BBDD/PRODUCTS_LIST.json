@@ -141,17 +141,17 @@
             "route": "/neon",
             "img": "bipin.png",
             "content": [
-                "SEC. 5x11mm (5mts-12V)",
-                "SEC. 6x12mm (5mts-12V)",
-                "SEC. 6x12mm (5mts-24V)",
-                "SEC. 5x11mm (50mts-12V)",
-                "SEC. 6x12mm (50mts-12V)",
-                "SEC. 6x12mm (50mts-24V)",
-                "SEC. CUADRADA (50mts-24V)",
-                "SEC. 8x16mm (100mts-220V)",
-                "ACCESORIOS PARAMANGUERA NEÓN (12V)",
-                "ACCESORIOS (220V)",
-                "KITS"
+                "Sec. 5x11mm (5mts-12V)",
+                "Sec. 6x12mm (5mts-12V)",
+                "Sec. 6x12mm (5mts-24V)",
+                "Sec. 5x11mm (50mts-12V)",
+                "Sec. 6x12mm (50mts-12V)",
+                "Sec. 6x12mm (50mts-24V)",
+                "Sec. Cuadrado (50mts-24V)",
+                "Sec. 8x16mm (100mts-220V)",
+                "Accesorios (12V)",
+                "Accesorios (220V)",
+                "Kits"
             ],
             "list_of_types": {
                 "MANGUERAS NEÓN - SECCIÓN 8 x 16 MM - 100 MTS DE LARGO - 220 VOLT": {

@@ -12,10 +12,10 @@ const Navbar: FC = () => {
     <nav
       className="
         fixed inset-x-0 top-0 h-16 
-        bg-white/30 backdrop-blur-sm 
+        bg-transparent backdrop-blur-xs 
         hover:bg-white 
-        transition-colors duration-200
-        shadow-md z-50
+        transition-colors duration-700
+        z-50
       "
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 h-full">
