@@ -1,7 +1,7 @@
 import React from 'react'
 import productsData from '../app/BBDD/PRODUCTS_LIST.json'
-import { ImageCard as Card } from '../components'
-import Link from 'next/link'
+// import { ImageCard as Card, Carousel } from '../components'
+import { Carousel } from '../components'
 
 // Revalidate cada 24 horas (ISR)
 export const revalidate = 86400
@@ -33,30 +33,53 @@ export default function Page() {
   const categoriesMap = dataArray[0]
   const categories = Object.values(categoriesMap)
 
+  // rutas a las imágenes de tu carousel
+  const slides = ['/images/carousel/1-1.png', '/images/carousel/1-2.png', '/images/carousel/1-3.png', '/images/carousel/1-4.png',]
+
   return (
     <>
-      <main className="flex flex-col items-center justify-center pb-20 pt-[7.4rem] min-h-screen">
-        <h1 className="text-3xl font-bold text-center mb-10">Nuestras Categorías</h1>
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
-          {categories.map((cat, i) => {
-            const count = Array.isArray(cat.content) ? cat.content.length : 0
-            // Extraer slug de cat.route:
-            const slug = cat.route.replace(/^\//, '').toLowerCase() // "/led" → "led"
+      {/* ===== Carrusel full‑width ===== */}
+      <div className="absolute top-0 left-0 w-screen z-0">
+        <Carousel slides={slides} />
+      </div>
 
-            return (
-              <div key={i} className="flex justify-center mt-56">
-                <Card
-                  name={cat.name}
-                  imageSrc={`/${cat.img}`}    // p.ej. "/bulbos.png"
-                  acceptLink={`/${slug}`}
-                  cancelLink={`/${slug}`}
-                  counts={count}
-                />
-              </div>
-            )
-          })}
-        </section>
-      </main>
+      {/* Para que el resto de contenido no quede debajo del carousel: */}
+      <div className="pt-[400px] md:pt-[400px]">
+        {/* Ajusta ese padding-top si cambias la altura */}
+
+        {/* ===== Tu contenido normal ===== */}
+        <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
+          <div className="text-center max-w-lg mx-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              Página en construcción
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
+              Estamos trabajando en esto. ¡Vuelve pronto!
+            </p>
+          </div>
+        </div>
+        {/* <main className="flex flex-col items-center justify-center pb-20 pt-[7.4rem] min-h-screen">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
+            {categories.map((cat, i) => {
+              const count = Array.isArray(cat.content) ? cat.content.length : 0
+              // Extraer slug de cat.route:
+              const slug = cat.route.replace(/^\//, '').toLowerCase() // "/led" → "led"
+
+              return (
+                <div key={i} className="flex justify-center mt-56">
+                  <Card
+                    name={cat.name}
+                    imageSrc={`/${cat.img}`}    // p.ej. "/bulbos.png"
+                    acceptLink={`/${slug}`}
+                    cancelLink={`/${slug}`}
+                    counts={count}
+                  />
+                </div>
+              )
+            })}
+          </section>
+        </main> */}
+      </div>
     </>
   )
 }

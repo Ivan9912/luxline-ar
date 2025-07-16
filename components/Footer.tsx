@@ -1,12 +1,9 @@
+'use client'
+
 import Link from 'next/link'
+import Image from 'next/image'
 import { FC } from 'react'
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-  FaTwitter,
-} from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
 
 const Footer: FC = () => {
   return (
@@ -16,11 +13,15 @@ const Footer: FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* ─────────── Columna 1: Branding y descripción ─────────── */}
           <div className="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
-            {/* Logo “LUXLINE” */}
+            {/* Logo “LUXLINE” reemplazado por imagen blanca */}
             <Link href="/" className="inline-block">
-              <h2 className="text-2xl font-extrabold text-white uppercase">
-                LUXLINE
-              </h2>
+              <Image
+                src="/images/luxline-logo.png"
+                alt="Luxline Logo"
+                width={200}
+                height={60}
+                className="w-32 sm:w-40 md:w-48 object-contain filter invert"
+              />
             </Link>
             <p className="text-sm">
               LUXLINE es una marca líder en soluciones de iluminación que fusiona
@@ -35,32 +36,32 @@ const Footer: FC = () => {
             <h3 className="text-lg font-semibold text-white">Enlaces</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/productos" className="hover:text-white transition">
-                  Productos
+                <Link href="/" className="hover:text-white transition">
+                  Producto
                 </Link>
               </li>
               <li>
-                <Link href="/lineas" className="hover:text-white transition">
+                <Link href="/" className="hover:text-white transition">
                   Líneas
                 </Link>
               </li>
               <li>
-                <Link href="/nosotros" className="hover:text-white transition">
+                <Link href="/" className="hover:text-white transition">
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-white transition">
+                <Link href="/" className="hover:text-white transition">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="hover:text-white transition">
+                <Link href="/" className="hover:text-white transition">
                   Contacto
                 </Link>
               </li>
               <li>
-                <Link href="/catalogo" className="hover:text-white transition">
+                <Link href="/" className="hover:text-white transition">
                   Catálogo
                 </Link>
               </li>
@@ -70,54 +71,28 @@ const Footer: FC = () => {
           {/* ─────────── Columna 3: Contacto y redes sociales ─────────── */}
           <div className="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
             <h3 className="text-lg font-semibold text-white">Contacto</h3>
+            <p className="text-sm">Argentina</p>
             <p className="text-sm">
-              Av. Iluminación 1234<br />
-              Ciudad de la Luz, CP 5678<br />
-              Argentina
+              Tel:{' '}
+              <Link href="tel:+5491123188568" className="hover:text-white">
+                +54 9 11 2318-8568
+              </Link>
             </p>
-            <p className="text-sm">Tel: +54 11 1234-5678</p>
-            <p className="text-sm">Email: contacto@luxline.com.ar</p>
+            <p className="text-sm">
+              Email:{' '}
+              <Link href="mailto:infomatelsud@gmail.com" className="hover:text-white">
+                infomatelsud@gmail.com
+              </Link>
+            </p>
 
             <div className="flex space-x-3 mt-4">
               <Link
-                href="https://facebook.com/luxline"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-800 hover:bg-gray-700 transition"
-              >
-                <FaFacebookF className="text-gray-300 hover:text-white" />
-              </Link>
-              <Link
-                href="https://instagram.com/luxline"
+                href="https://www.instagram.com/_luxline?igsh=cTN1cXkxZHh2bWpn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-800 hover:bg-gray-700 transition"
               >
                 <FaInstagram className="text-gray-300 hover:text-white" />
-              </Link>
-              <Link
-                href="https://linkedin.com/company/luxline"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-800 hover:bg-gray-700 transition"
-              >
-                <FaLinkedinIn className="text-gray-300 hover:text-white" />
-              </Link>
-              <Link
-                href="https://youtube.com/luxline"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-800 hover:bg-gray-700 transition"
-              >
-                <FaYoutube className="text-gray-300 hover:text-white" />
-              </Link>
-              <Link
-                href="https://twitter.com/luxline"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-800 hover:bg-gray-700 transition"
-              >
-                <FaTwitter className="text-gray-300 hover:text-white" />
               </Link>
             </div>
           </div>
@@ -129,7 +104,7 @@ const Footer: FC = () => {
 
       {/* ─────────── Pie copyright ─────────── */}
       <div className="mt-6 text-center text-xs text-gray-500 pb-6">
-        LUXLINE® es una marca registrada de Coresa Group SRL, Todos los derechos
+        LUXLINE® es una marca registrada, Todos los derechos
         reservados 2025.
       </div>
     </footer>
