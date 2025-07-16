@@ -7,24 +7,9 @@ import { Carousel } from '../components'
 export const revalidate = 86400
 
 // Tipos según PRODUCTS_LIST.json
-interface ListItem {
-  name: string
-  route: string
-}
-interface ListOfType {
-  name: string
-  route: string
-  content: string[]
-  list_of_items?: Record<string, ListItem>
-}
-interface Category {
-  name: string
-  route: string
-  content: string[]
-  list_of_types: Record<string, ListOfType>
-  img: string
-}
-
+interface ListItem { name: string; route: string }
+interface ListOfType { name: string; route: string; content: string[]; list_of_items?: Record<string, ListItem> }
+interface Category { name: string; route: string; content: string[]; list_of_types: Record<string, ListOfType>; img: string }
 type ProductsData = Record<string, Category>[]
 
 export default function Page() {
