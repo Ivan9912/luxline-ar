@@ -1,7 +1,6 @@
 import React from 'react'
 import productsData from '../app/BBDD/PRODUCTS_LIST.json'
-// import { ImageCard as Card, Carousel } from '../components'
-import { Carousel } from '../components'
+import { ImageCard as Card, Carousel } from '../components'
 
 // Revalidate cada 24 horas (ISR)
 export const revalidate = 86400
@@ -33,7 +32,7 @@ export default function Page() {
         {/* Ajusta ese padding-top si cambias la altura */}
 
         {/* ===== Tu contenido normal ===== */}
-        <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
+        {/* <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
           <div className="text-center max-w-lg mx-auto">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Página en construcción
@@ -42,8 +41,8 @@ export default function Page() {
               Estamos trabajando en esto. ¡Vuelve pronto!
             </p>
           </div>
-        </div>
-        {/* <main className="flex flex-col items-center justify-center pb-20 pt-[7.4rem] min-h-screen">
+        </div> */}
+        <main className="flex flex-col items-center justify-center pb-20 pt-[7.4rem] min-h-screen">
           <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
             {categories.map((cat, i) => {
               const count = Array.isArray(cat.content) ? cat.content.length : 0
@@ -63,21 +62,8 @@ export default function Page() {
               )
             })}
           </section>
-        </main> */}
+        </main>
       </div>
     </>
   )
 }
-
-// import React from 'react';
-
-// export default function Page() {
-//   return (
-//     <div className="flex items-center justify-center h-screen bg-gray-100">
-//       <div className="text-center">
-//         <h1 className="text-5xl font-bold mb-4">Página en construcción</h1>
-//         <p className="text-xl text-gray-600">Estamos trabajando en esto. ¡Vuelve pronto!</p>
-//       </div>
-//     </div>
-//   );
-// }
