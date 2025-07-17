@@ -10,7 +10,7 @@ const Navbar: FC = () => {
   const toggleMobileMenu = () => setMobileMenuOpen(prev => !prev)
 
   return (
-    <nav className="sticky top-0 w-full z-50 bg-transparent backdrop-blur-md hover:bg-white transition-colors duration-700 overscroll-none">
+    <nav>
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         <div className="flex items-center justify-between py-2">
           

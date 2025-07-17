@@ -4,7 +4,4 @@ export { default as Nav } from './Navbar'
 export { default as Carousel } from './Carousel'
 export { ProductSpecs } from './ProductSpecs'
 export { default as CarouselClient } from './CarouselClient'
-
-
-
-// Exporta aquí futuros componentes: Banner, Card, Button, etc.
+export { default as WhatsAppFloatingButton } from './WhatsAppFloatingButton'

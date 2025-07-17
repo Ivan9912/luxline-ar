@@ -1,7 +1,6 @@
 import React from 'react';
 import productsData from '../app/BBDD/PRODUCTS_LIST2.json';
-import { ImageCard as Card } from '../components';
-import CarouselClient from '../components/CarouselClient';
+import { ImageCard as Card, CarouselClient, WhatsAppFloatingButton } from '../components';
 
 // Revalidate cada 24 horas (ISR)
 export const revalidate = 86400
@@ -27,9 +26,10 @@ export default function Page() {
       <div className="absolute top-0 left-0 w-screen z-0">
         <CarouselClient slides={slides} />
       </div>
+      
 
       {/* Para que el resto de contenido no quede debajo del carousel: */}
-      <div className="pt-[100px] md:pt-[200px]">
+      <div className="pt-80">
         {/* Ajusta ese padding-top si cambias la altura */}
 
         {/* ===== Tu contenido normal ===== */}
@@ -43,8 +43,8 @@ export default function Page() {
             </p>
           </div>
         </div> */}
-        <main className="flex flex-col items-center justify-center pb-20 pt-[7.4rem] min-h-screen">
-          <section className="grid grid-cols-1">
+        <main className="flex flex-col items-center justify-center py-auto min-h-screen">
+          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
             {categoriesEntries.map(([key, cat], i) => {
               const count = Array.isArray(cat.content) ? cat.content.length : 0
               // Extraer slug de cat.route:

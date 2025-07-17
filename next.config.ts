@@ -9,13 +9,16 @@ reactStrictMode: true,
 experimental: {
 // Si usas nuevas características experimentales, decláralas aquí
 },
-remotePatterns: [
+images: {
+    // Esto **solo** aplica a <Image>
+    remotePatterns: [
       {
         protocol: 'https',
         hostname: 'drive.google.com',
-        port: '',       // puede omitirse si no usas un puerto específico
-        pathname: '/**' // todas las rutas bajo ese host
-      }]
+        pathname: '/**',
+      }
+    ]
+  },
 }
 
 export default nextConfig
