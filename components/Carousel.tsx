@@ -14,27 +14,30 @@ interface AutoCarouselProps {
 
 export default function AutoCarousel({ slides }: AutoCarouselProps) {
   return (
-    <Swiper
-      modules={[Autoplay]}
-      slidesPerView={1}
-      loop
-      autoplay={{ delay: 4000, disableOnInteraction: false }}
-      className="w-screen"
-    >
-      {slides.map((src, idx) => (
-        <SwiperSlide key={idx}>
-          <div className="w-screen">
-            <Image
-              src={src}
-              width={1200}
-              height={400}
-              alt={`slide-${idx}`}
-              className="w-full h-auto object-cover"
-              priority={idx === 0}
-            />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    // Desplaza el carousel debajo del navbar (h-16 = 4rem)
+    <div>
+      <Swiper
+        modules={[Autoplay]}
+        slidesPerView={1}
+        loop
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        // Ocupa todo el ancho y el alto de la viewport menos 4rem
+        className="w-full h-[calc(50vh-4rem)]"
+      >
+        {slides.map((src, idx) => (
+          <SwiperSlide key={idx}>
+            <div className="relative w-full h-full">
+              <Image
+                src={src}
+                alt={`slide-${idx}`}
+                fill
+                className="object-cover"
+                priority={idx === 0}
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   )
 }

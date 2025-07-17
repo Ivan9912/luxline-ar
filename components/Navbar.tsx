@@ -10,7 +10,7 @@ const Navbar: FC = () => {
   const toggleMobileMenu = () => setMobileMenuOpen(prev => !prev)
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 bg-transparent backdrop-blur-md hover:bg-white transition-colors duration-700">
+    <nav className="sticky top-0 w-full z-50 bg-transparent backdrop-blur-md hover:bg-white transition-colors duration-700 overscroll-none">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
         <div className="flex items-center justify-between py-2">
           
@@ -28,7 +28,7 @@ const Navbar: FC = () => {
 
           {/* Menú escritorio */}
           <div className="hidden md:flex space-x-4">
-            {['productos','nosotros','contacto'].map((path) => (
+            {['productos','nosotros','contacto'].map(path => (
               <Link
                 key={path}
                 href={`/${path}`}
@@ -62,21 +62,21 @@ const Navbar: FC = () => {
 
       {/* Menú desplegable móvil */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            {['productos','nosotros','contacto'].map((path) => (
-              <Link
-                key={path}
-                href={`/${path}`}
-                className="block text-black px-3 py-2 rounded hover:text-yellow-400 active:text-cyan-500 transition-all duration-200 ease-in-out"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {path.charAt(0).toUpperCase() + path.slice(1)}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
+       <div className="absolute top-full left-0 w-full bg-white md:hidden z-50">
+         <div className="px-2 pt-2 pb-3 space-y-1">
+           {['productos','nosotros','contacto'].map(path => (
+             <Link
+               key={path}
+               href={`/${path}`}
+               className="block text-black px-3 py-2 rounded hover:text-yellow-400 active:text-cyan-500 transition-all duration-200 ease-in-out"
+               onClick={() => setMobileMenuOpen(false)}
+             >
+               {path.charAt(0).toUpperCase() + path.slice(1)}
+             </Link>
+           ))}
+         </div>
+       </div>
+     )}
     </nav>
   )
 }

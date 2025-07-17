@@ -1,76 +1,167 @@
+'use client';
+
 import Link from 'next/link'
+import Image from 'next/image'
 import { FC } from 'react'
 
-type ImageCardProps = {
+export interface ImageCardProps {
   imageSrc: string
-  acceptLink: string
-  cancelLink: string
+  srcLink: string      // enlace al PDF
   alt?: string
-  name: string
-  counts: any
+  name: string         // título
+  description: string  // descripción
+  counts: number       // cantidad de productos
+  download: string
 }
 
 const ImageCard: FC<ImageCardProps> = ({
   imageSrc,
-  acceptLink,
-  cancelLink,
+  srcLink,
   alt = 'Imagen',
   name,
-  counts
+  description,
+  counts,
+  download,
 }) => {
   return (
-    <div className="relative flex justify-center group shadow-lg hover:shadow-xl/30 w-72 h-72 overflow-hidden rounded-lg ">
-      {/* Overlay de fondo */}
-      <div className={`
-        absolute inset-0
-        group-hover:bg-gradient-to-br from-yellow-300/40 from-10% via-black via-14% to-black/90 to-100%
-        transition-opacity duration-300
-        group-hover:opacity-95
-      `} />
-
-      {/* Imagen con link */}
-      <div className="flex flex-col items-center justify w-4/5 h-4/5 absolute">
-        <div className='w-full flex items-center justify-center'>
-          <img
+    <>
+      <div className=" md:block hidden
+      group relative w-full sm:w-80 md:w-72
+      hover:bg-black bg-transparent rounded-lg overflow-hidden
+      shadow-lg transition-shadow duration-300
+      hover:shadow-2xl
+    ">
+        {/* Imagen superior */}
+        <div className="relative w-full h-48 sm:h-56 md:h-64">
+          <Image
             src={imageSrc}
             alt={alt}
-            className={`
-              w-10/12 h-10/12 object-cover
-              rounded-lg
-              opacity-90
-              transition-transform duration-300
-              group-hover:scale-95
-            `}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
-        <p><span className='text-black font-normal group-hover:text-white duration-300 group-hover:font-bold'>{name}</span></p>
-        {/* Contador de productos debajo del nombre */}
-        <p className="text-xs font-light text-gray-600 group-hover:text-white duration-300">
-          {counts} {counts === 1 ? 'Producto' : 'Productos'}
-        </p>
-      </div>
 
-      {/* Botones */}
-      <div className={`
-        absolute inset-2
-        flex items-end justify-center space-x-4
-        opacity-0 group-hover:opacity-100
+        {/* Overlay de hover */}
+        <div className="
+        absolute inset-0 bg-black
+        opacity-0 group-hover:opacity-60
         transition-opacity duration-300
-      `}>
-        <Link href={acceptLink.toLowerCase()} className='px-4 py-2 text-xs text-white bg-transparent
-            border-2 border-white rounded-md
-            transition-colors duration-300
-            hover:bg-white hover:text-black'>
-          Ficha técnica
-        </Link>
-        <Link href={cancelLink.toLowerCase()}  className='px-4 py-2 text-xs text-white bg-transparent
-            border-2 border-white rounded-md
-            transition-colors duration-300
-            hover:bg-white hover:text-black'>
-          Ver producto
-        </Link>
+      " />
+
+        {/* Contenido sobre la imagen */}
+        <div className="absolute inset-0 flex flex-col justify-end p-4 space-y-2">
+          <h3 className="
+          text-lg font-semibold
+          text-transparent group-hover:text-white
+          transition-colors duration-300
+        ">
+            {name}
+          </h3>
+          <p className="
+          text-sm
+          text-transparent group-hover:text-white
+          transition-colors duration-300
+          line-clamp-2
+        ">
+            {description}
+          </p>
+          <p className="
+          text-xs font-light
+          text-transparent group-hover:text-white
+          transition-colors duration-300
+        ">
+            {counts} {counts === 1 ? 'Producto' : 'Productos'}
+          </p>
+
+          {/* Botón: siempre visible en móvil, sólo en hover en desktop */}
+          <Link
+            href={srcLink}
+            download={download}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+            mt-2 w-full text-center
+            bg-white text-black py-2 rounded
+            opacity-100 md:opacity-0 md:group-hover:opacity-100
+             transition-colors duration-300
+            hover:bg-gray-200
+          "
+          >
+            Descargar Catálogo
+          </Link>
+        </div>
       </div>
-    </div>
+      {/* ----------------------------------- */}
+      <div className=" md:hidden
+      group relative w-full max-w-xs
+      bg-white rounded-lg overflow-hidden
+      shadow-lg transition-shadow duration-300
+      hover:shadow-2xl
+    ">
+        {/* Imagen superior */}
+        <div className="relative w-full h-48 overflow-hidden">
+          <Image
+            src={imageSrc}
+            alt={alt}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          {/* Overlay oscuro sólo en desktop:hover */}
+          <div className="
+          absolute inset-0 bg-black
+          opacity-0 md:group-hover:opacity-50
+          transition-opacity duration-300
+        " />
+        </div>
+
+        {/* Contenido debajo de la imagen */}
+        <div className="p-4 flex flex-col space-y-2">
+          <h3 className="
+          text-lg font-semibold
+          text-black
+          md:group-hover:text-white
+          transition-colors duration-300
+        ">
+            {name}
+          </h3>
+
+          <p className="
+          text-sm text-gray-700
+          md:group-hover:text-white
+          transition-colors duration-300
+          line-clamp-2
+        ">
+            {description}
+          </p>
+
+          <p className="
+          text-xs font-light text-gray-600
+          md:group-hover:text-white
+          transition-colors duration-300
+        ">
+            {counts} {counts === 1 ? 'Producto' : 'Productos'}
+          </p>
+
+          {/* Botón: siempre visible en móvil; en desktop sólo en hover */}
+          <Link
+            href={srcLink}
+            download={download}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+            mt-auto block w-full text-center
+            bg-black text-white py-2 rounded
+            transition-opacity duration-300
+            opacity-100
+            md:opacity-0 md:group-hover:opacity-100
+            hover:bg-gray-800
+          "
+          >
+            Descargar Catálogo
+          </Link>
+        </div>
+      </div>
+    </>
   )
 }
 

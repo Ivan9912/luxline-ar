@@ -1,15 +1,16 @@
-import React from 'react'
-import productsData from '../app/BBDD/PRODUCTS_LIST.json'
-import { ImageCard as Card, Carousel } from '../components'
+import React from 'react';
+import productsData from '../app/BBDD/PRODUCTS_LIST2.json';
+import { ImageCard as Card } from '../components';
+import CarouselClient from '../components/CarouselClient';
 
 // Revalidate cada 24 horas (ISR)
 export const revalidate = 86400
 
 // Tipos según PRODUCTS_LIST.json
-interface ListItem { name: string; route: string }
-interface ListOfType { name: string; route: string; content: string[]; list_of_items?: Record<string, ListItem> }
-interface Category { name: string; route: string; content: string[]; list_of_types: Record<string, ListOfType>; img: string }
-type ProductsData = Record<string, Category>[]
+interface ListItem { name: string; route: string };
+interface ListOfType { name: string; route: string; content: string[]; list_of_items?: Record<string, ListItem> };
+interface Category { name: string; route: string; content: string[]; list_of_types: Record<string, ListOfType>; img: string, description: string, download: string };
+type ProductsData = Record<string, Category>[];
 
 export default function Page() {
   // productsData es importado desde el JSON local en build time
@@ -18,17 +19,17 @@ export default function Page() {
   const categories = Object.values(categoriesMap)
 
   // rutas a las imágenes de tu carousel
-  const slides = ['/images/carousel/1-1.png', '/images/carousel/1-2.png', '/images/carousel/1-3.png', '/images/carousel/1-4.png',]
+  const slides = ['/images/carousel/1-1.jpg', '/images/carousel/1-2.jpg', '/images/carousel/1-3.jpg', '/images/carousel/1-4.jpg', '/images/carousel/1-5.jpg', '/images/carousel/1-6.jpg', '/images/carousel/1-7.jpg',]
 
   return (
     <>
       {/* ===== Carrusel full‑width ===== */}
       <div className="absolute top-0 left-0 w-screen z-0">
-        <Carousel slides={slides} />
+        <CarouselClient slides={slides} />
       </div>
 
       {/* Para que el resto de contenido no quede debajo del carousel: */}
-      <div className="pt-[400px] md:pt-[400px]">
+      <div className="pt-[100px] md:pt-[200px]">
         {/* Ajusta ese padding-top si cambias la altura */}
 
         {/* ===== Tu contenido normal ===== */}
@@ -43,20 +44,21 @@ export default function Page() {
           </div>
         </div> */}
         <main className="flex flex-col items-center justify-center pb-20 pt-[7.4rem] min-h-screen">
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
+          <section className="grid grid-cols-1">
             {categories.map((cat, i) => {
               const count = Array.isArray(cat.content) ? cat.content.length : 0
               // Extraer slug de cat.route:
               const slug = cat.route.replace(/^\//, '').toLowerCase() // "/led" → "led"
 
               return (
-                <div key={i} className="flex justify-center mt-56">
+                <div key={i} className="flex justify-center ">
                   <Card
+                    description={cat.description}
                     name={cat.name}
                     imageSrc={`/${cat.img}`}    // p.ej. "/bulbos.png"
-                    acceptLink={`/${slug}`}
-                    cancelLink={`/${slug}`}
+                    srcLink={`/${slug}`}
                     counts={count}
+                    download={cat.download}
                   />
                 </div>
               )

@@ -8,7 +8,14 @@ allowedDevOrigins: ['local-origin.dev', '*.local-origin.dev', '172.16.5.6:3000']
 reactStrictMode: true,
 experimental: {
 // Si usas nuevas características experimentales, decláralas aquí
-}
+},
+remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com',
+        port: '',       // puede omitirse si no usas un puerto específico
+        pathname: '/**' // todas las rutas bajo ese host
+      }]
 }
 
 export default nextConfig
