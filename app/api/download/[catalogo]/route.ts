@@ -1,13 +1,21 @@
 import { NextRequest } from 'next/server'
 import productsConfig from '../../../BBDD/PRODUCTS_LIST2.json'
 
+interface CatalogEntry {
+  downloadUrl: string
+  downloadName: string
+}
+
+type ProductsConfig = Array<Record<string, CatalogEntry>>
+
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ catalogo: string }>  }
 ) {
   const { catalogo } = await params
   const slug = catalogo.toUpperCase()
-  const entry = (productsConfig as any)[0][slug]
+  const config = productsConfig as ProductsConfig
+  const entry = config[0][slug]
   if (!entry) return new Response('No encontrado', { status: 404 })
 
   // 1) Extraemos el ID sea cual sea el formato de URL
