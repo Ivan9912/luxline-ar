@@ -11,7 +11,7 @@ export interface ImageCardProps {
   name: string         // título
   description: string  // descripción
   counts: number       // cantidad de productos
-  download: string
+  downloadName: string
 }
 
 const ImageCard: FC<ImageCardProps> = ({
@@ -21,7 +21,7 @@ const ImageCard: FC<ImageCardProps> = ({
   name,
   description,
   counts,
-  download,
+  downloadName,
 }) => {
   return (
     <>
@@ -76,7 +76,7 @@ const ImageCard: FC<ImageCardProps> = ({
           {/* Botón: siempre visible en móvil, sólo en hover en desktop */}
           <Link
             href={srcLink}
-            download={download}
+            download={downloadName}
             target="_blank"
             rel="noopener noreferrer"
             className="
@@ -145,7 +145,7 @@ const ImageCard: FC<ImageCardProps> = ({
           {/* Botón: siempre visible en móvil; en desktop sólo en hover */}
           <Link
             href={srcLink}
-            download={download}
+            download={downloadName}
             target="_blank"
             rel="noopener noreferrer"
             className="

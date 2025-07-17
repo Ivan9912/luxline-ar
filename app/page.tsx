@@ -9,14 +9,14 @@ export const revalidate = 86400
 // Tipos según PRODUCTS_LIST.json
 interface ListItem { name: string; route: string };
 interface ListOfType { name: string; route: string; content: string[]; list_of_items?: Record<string, ListItem> };
-interface Category { name: string; route: string; content: string[]; list_of_types: Record<string, ListOfType>; img: string, description: string, download: string };
+interface Category { name: string; downloadUrl: string; content: string[]; list_of_types: Record<string, ListOfType>; img: string, description: string, downloadName: string };
 type ProductsData = Record<string, Category>[];
 
 export default function Page() {
   // productsData es importado desde el JSON local en build time
   const dataArray = (productsData as unknown) as ProductsData
   const categoriesMap = dataArray[0]
-  const categories = Object.values(categoriesMap)
+  const categoriesEntries = Object.entries(categoriesMap) as [string, Category][]
 
   // rutas a las imágenes de tu carousel
   const slides = ['/images/carousel/1-1.jpg', '/images/carousel/1-2.jpg', '/images/carousel/1-3.jpg', '/images/carousel/1-4.jpg', '/images/carousel/1-5.jpg', '/images/carousel/1-6.jpg', '/images/carousel/1-7.jpg',]
@@ -45,20 +45,21 @@ export default function Page() {
         </div> */}
         <main className="flex flex-col items-center justify-center pb-20 pt-[7.4rem] min-h-screen">
           <section className="grid grid-cols-1">
-            {categories.map((cat, i) => {
+            {categoriesEntries.map(([key, cat], i) => {
               const count = Array.isArray(cat.content) ? cat.content.length : 0
               // Extraer slug de cat.route:
-              const slug = cat.route.replace(/^\//, '').toLowerCase() // "/led" → "led"
+              const slug = key.toLowerCase()
 
               return (
                 <div key={i} className="flex justify-center ">
                   <Card
                     description={cat.description}
                     name={cat.name}
-                    imageSrc={`/${cat.img}`}    // p.ej. "/bulbos.png"
-                    srcLink={`/${slug}`}
+                    imageSrc={`/${cat.img}`}
+                    // aquí usamos el slug correcto
+                    srcLink={`/api/download/${slug}`}
                     counts={count}
-                    download={cat.download}
+                    downloadName={cat.downloadName}
                   />
                 </div>
               )
