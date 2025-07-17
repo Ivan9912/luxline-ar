@@ -1,6 +1,6 @@
 import React from 'react';
 import productsData from '../app/BBDD/PRODUCTS_LIST2.json';
-import { ImageCard as Card, CarouselClient, WhatsAppFloatingButton } from '../components';
+import { ImageCard as Card, CarouselClient } from '../components';
 
 // Revalidate cada 24 horas (ISR)
 export const revalidate = 86400
